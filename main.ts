@@ -50,7 +50,6 @@ input.onSound(DetectedSound.Loud, function () {
         第六段()
         第七段()
         第八段()
-        第四段()
     }
     rvm1218_1()
     rvm1218_2()
@@ -63,6 +62,7 @@ input.onSound(DetectedSound.Loud, function () {
     rvm1217_3()
     rvm1217_4()
     rvm1217_5()
+    第四段()
 })
 function rvm1217_4 () {
     music.playTone(392, music.beat(BeatFraction.Whole))
@@ -274,12 +274,13 @@ function 第一段 () {
     music.rest(music.beat(BeatFraction.Half))
 }
 let light2 = 0
+basic.pause(5000)
 music.setTempo(199)
 basic.forever(function () {
     light2 = input.lightLevel()
-    if (light2 > 130) {
-        basic.showString("2020")
-        basic.showIcon(IconNames.Heart)
-        basic.showString("Merry Christmas")
+    if (light2 > 10) {
+        basic.showString(" dfeng 306")
+        basic.showString("Merry Chirstmas")
+        basic.showIcon(IconNames.Happy)
     }
 })
